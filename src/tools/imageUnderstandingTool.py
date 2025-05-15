@@ -22,7 +22,7 @@ az_model_client = AzureOpenAI(
 )
 
 
-def image_describing_tool(image_input, feedback = None, mime_type=None):
+def image_describing_tool(image_input, conversation_history, query = None, mime_type=None):
     try:
         if isinstance(image_input, str):
             if image_input.startswith("http://") or image_input.startswith("https://"):
@@ -55,15 +55,12 @@ def image_describing_tool(image_input, feedback = None, mime_type=None):
 
     # ----------------------------
     # Construct chat prompt
-    common_prompt = "Please look at the image and provide a detailed description to the last minute details. Include details like traditional_name, size, color, and material used in the image. Give an appropriate size of the object in image (use your best guess) Provide in a crude way, which will be polished later. If the is not a product, please say so. If its some scenery, or some docvument, just say so."
 
-    if feedback:
-        common_prompt += f"\nThe feedback from user is: {feedback}"
 
     chat_prompt = [
         {
             "role": "system",
-            "content": "You are an AI assistant whose task is to describe the image as required by the user."
+            "content": "You are an AI assistant who is a tool to an agent. Reply as a tool to the agent. The agent will use your reply to do the next step."
         }
     ]
 
@@ -74,7 +71,11 @@ def image_describing_tool(image_input, feedback = None, mime_type=None):
             "content": [
                 {
                     "type": "text",
-                    "text": common_prompt
+                    "text": "conversation history\n" + conversation_history
+                },
+                {
+                    "type": "text",
+                    "text": query
                 },
                 {
                     "type": "image_url",
@@ -97,7 +98,11 @@ def image_describing_tool(image_input, feedback = None, mime_type=None):
             "content": [
                 {
                     "type": "text",
-                    "text": common_prompt
+                    "text": "conversation history\n" + conversation_history
+                },
+                {
+                    "type": "text",
+                    "text": query
                 },
                 {
                     "type": "image_url",
