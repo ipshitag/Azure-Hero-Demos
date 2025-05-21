@@ -2,55 +2,61 @@ OnlyOneIterationAnswer = {
     "products": {
         "Paint Shades": [
             {
-                "id": "PAINT-SHADE-001",
-                "name": "Misty Gray",
+                "id": "PAINT-SHADE-011",
+                "name": "Pale Meadow",
                 "type": "Paint Shade",
-                "description": "A soft and versatile gray, perfect for modern interiors.",
-                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/paint_1.png",
-                "punchLine": "Trendy gray for a fresh, airy look"
+                "description": "A soft, earthy green reminiscent of open meadows at dawn.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/PaleMeadow.png",
+                "punchLine": "Nature’s touch inside your home",
+                "price": 29.99
             },
             {
-                "id": "PAINT-SHADE-002",
-                "name": "Warm Sand",
+                "id": "PAINT-SHADE-013",
+                "name": "Tranquil Lavender",
                 "type": "Paint Shade",
-                "description": "A warm, inviting beige that adds comfort to any room.",
-                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/paint_2.png",
-                "punchLine": "Bring warmth to your home"
+                "description": "A muted lavender that soothes and reassures, ideal for relaxation.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/TranquilLavender.png",
+                "punchLine": "Find your peaceful moment",
+                "price": 31.25
             },
             {
-                "id": "PAINT-SHADE-003",
-                "name": "Ocean Teal",
+                "id": "PAINT-SHADE-014",
+                "name": "Whispering Blue",
                 "type": "Paint Shade",
-                "description": "Rich teal hue for a bold, sophisticated accent wall.",
-                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/paint_3.png",
-                "punchLine": "Make a statement with bold color"
-            }
+                "description": "Light, breezy blue that lifts spirits and refreshes the space.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/WhisperingBlue.png",
+                "punchLine": "Float away on blue skies",
+                "price": 47.30
+            },
         ],
         "Paint Sprayers": [
             {
-                "id": "PAINT-SPRAYER-001",
-                "name": "HomePro HVLP 200",
-                "type": "Paint Sprayer",
-                "description": "Highly-rated home paint sprayer for even, quick application.",
-                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/paint_sprayer_1.png",
-                "punchLine": "Fast & smooth painting—perfect for DIYers"
+            "id": "PAINT-SPRAYER-001",
+            "name": "Cordless Airless Pro",
+            "type": "Paint Sprayer",
+            "description": "Go cordless and conquer any project with this ultra-portable airless paint sprayer. Delivers smooth, even coverage on walls, decks, and fences—anywhere freedom is needed.",
+            "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/CordlessAirlessPaintSprayer.png",
+            "punchLine": "Spray without limits, anywhere you go!",
+            "price": 199.99
             },
             {
-                "id": "PAINT-SPRAYER-002",
-                "name": "FlexSpray Max",
-                "type": "Paint Sprayer",
-                "description": "Versatile sprayer featuring adjustable nozzle for multiple finishes.",
-                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/paint_sprayer_2.png",
-                "punchLine": "Customizable for any project size"
+            "id": "PAINT-SPRAYER-002",
+            "name": "Cordless Compact Painter",
+            "type": "Paint Sprayer",
+            "description": "Perfect for precision DIYers—this compact, cordless paint sprayer is ideal for touch-ups, furniture, and tight corners. Lightweight, portable, and powerful.",
+            "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/CordlessPaintSprayerCompact.png",
+            "punchLine": "Precision in the palm of your hand",
+            "price": 129.50
             },
             {
-                "id": "PAINT-SPRAYER-003",
-                "name": "ProFinish 360",
-                "type": "Paint Sprayer",
-                "description": "Professional-grade for flawless walls and ceilings.",
-                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/paint_sprayer_3.png",
-                "punchLine": "Flawless coverage, every time"
-            }
+            "id": "PAINT-SPRAYER-003",
+            "name": "Electric Sprayer 350",
+            "type": "Paint Sprayer",
+            "description": "A dependable electric paint sprayer offering 350W of steady power for smooth, consistent finishes. Ideal for home interiors, cabinetry, and more.",
+            "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/ElectricPaintSprayer350.png",
+            "punchLine": "Power up your paint game!",
+            "price": 89.99
+            },
         ]
     },
     "answer": "Based on the size of your room, you'll need approximately 4 to 5 gallons of paint. Here are some trendy shades you might like and some paint sprayers.",
@@ -62,14 +68,13 @@ OnlyOneIterationAnswer = {
     ]
 }
 
-
 FirstIteration_v1 = {
     "products": {},
     "answer": "I’d be happy to recommend a paint shade. Could you describe what the room looks like or share a photo?",
     "thinking": "The customer wants to paint their room and is looking for both shade suggestions and paint sprayer options. Given the size, a 4 to 5 gallon quantity is recommended. To enhance their experience, presenting stylish color options alongside helpful tools like sprayers supports ease and inspiration.",
     "suggestions": [
-        "I dont have a photo, but its a small living room with a lot of light.",
-        "I cannot share a photo, but I can describe the room, its a studio apartment with a lot of light.",
+        # "I dont have a photo, but its a small living room with a lot of light.",
+        # "I cannot share a photo, but I can describe the room, its a studio apartment with a lot of light.",
     ]
 }
 
@@ -78,8 +83,9 @@ FirstIteration_v2 = {
     "answer": "I can suggest some paint colors—would you be able to tell me a bit about the room or show me a picture?",
     "thinking": "The customer wants to paint their room and is looking for both shade suggestions and paint sprayer options. Given the size, a 4 to 5 gallon quantity is recommended. To enhance their experience, presenting stylish color options alongside helpful tools like sprayers supports ease and inspiration.",
     "suggestions": [
-        "I dont have a photo, but its a small living room with a lot of light.",
-        "I cannot share a photo, but I can describe the room, its a studio apartment with a lot of light."]
+        # "I dont have a photo, but its a small living room with a lot of light.",
+        # "I cannot share a photo, but I can describe the room, its a studio apartment with a lot of light."
+        ]
 }
 
 FirstIteration_v3 = {
@@ -87,8 +93,8 @@ FirstIteration_v3 = {
     "answer": "To help recommend a shade, could you describe the room’s appearance or provide an image?",
     "thinking": "The customer wants to paint their room and is looking for both shade suggestions and paint sprayer options. Given the size, a 4 to 5 gallon quantity is recommended. To enhance their experience, presenting stylish color options alongside helpful tools like sprayers supports ease and inspiration.",
     "suggestions": [
-        "I dont have a photo, but its a small living room with a lot of light.",
-        "I cannot share a photo, but I can describe the room, its a studio apartment with a lot of light."
+        # "I dont have a photo, but its a small living room with a lot of light.",
+        # "I cannot share a photo, but I can describe the room, its a studio apartment with a lot of light."
     ]
 }
 
@@ -96,6 +102,33 @@ SecondIteration_v1 = {
     "products": {
         "Paint Shades":
         [
+            {
+                "id": "PAINT-SHADE-011",
+                "name": "Pale Meadow",
+                "type": "Paint Shade",
+                "description": "A soft, earthy green reminiscent of open meadows at dawn.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/PaleMeadow.png",
+                "punchLine": "Nature’s touch inside your home",
+                "price": 29.99
+            },
+            {
+                "id": "PAINT-SHADE-013",
+                "name": "Tranquil Lavender",
+                "type": "Paint Shade",
+                "description": "A muted lavender that soothes and reassures, ideal for relaxation.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/TranquilLavender.png",
+                "punchLine": "Find your peaceful moment",
+                "price": 31.25
+            },
+            {
+                "id": "PAINT-SHADE-014",
+                "name": "Whispering Blue",
+                "type": "Paint Shade",
+                "description": "Light, breezy blue that lifts spirits and refreshes the space.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/WhisperingBlue.png",
+                "punchLine": "Float away on blue skies",
+                "price": 47.30
+            },
             {
                 "id": "PAINT-SHADE-004",
                 "name": "Coastal Whisper",
@@ -159,15 +192,7 @@ SecondIteration_v1 = {
                 "punchLine": "Wrap your walls in a purple haze",
                 "price": 55.00
             },
-            {
-                "id": "PAINT-SHADE-011",
-                "name": "Pale Meadow",
-                "type": "Paint Shade",
-                "description": "A soft, earthy green reminiscent of open meadows at dawn.",
-                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/PaleMeadow.png",
-                "punchLine": "Nature’s touch inside your home",
-                "price": 29.99
-            },
+
             {
                 "id": "PAINT-SHADE-012",
                 "name": "Soft Creamsicle",
@@ -177,24 +202,8 @@ SecondIteration_v1 = {
                 "punchLine": "Sweeten your space with a smile",
                 "price": 41.49
             },
-            {
-                "id": "PAINT-SHADE-013",
-                "name": "Tranquil Lavender",
-                "type": "Paint Shade",
-                "description": "A muted lavender that soothes and reassures, ideal for relaxation.",
-                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/TranquilLavender.png",
-                "punchLine": "Find your peaceful moment",
-                "price": 31.25
-            },
-            {
-                "id": "PAINT-SHADE-014",
-                "name": "Whispering Blue",
-                "type": "Paint Shade",
-                "description": "Light, breezy blue that lifts spirits and refreshes the space.",
-                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/WhisperingBlue.png",
-                "punchLine": "Float away on blue skies",
-                "price": 47.30
-            },
+
+
             {
                 "id": "PAINT-SHADE-015",
                 "name": "Whispering Blush",
@@ -209,9 +218,9 @@ SecondIteration_v1 = {
     "answer": "Here are some stylish paint shades I think you’ll love! Could you let me know how big your room is? That way, I can make sure you get the right amount.",
     "thinking": "The customer wants to paint their room and is looking for both shade suggestions and paint sprayer options. Given the size, a 4 to 5 gallon quantity is recommended. To enhance their experience, presenting stylish color options alongside helpful tools like sprayers supports ease and inspiration.",
     "suggestions": [
-        "The room is 12 feet by 15 feet.",
-        "Its dimensions are 12 ft x 15 ft.",
-        "The size of the room is 12 by 15 feet."
+        "The room is 11 feet by 14 feet.",
+        "Its dimensions are 12 ft x 14 ft.",
+        "The size of the room is 13 by 15 feet."
     ]
 }
 
@@ -332,9 +341,9 @@ SecondIteration_v2 = {
     "answer": "I’ve picked out some great paint colors for you! Could you tell me the size of your room so I can recommend how much paint you’ll need?",
     "thinking": "The customer wants to paint their room and is looking for both shade suggestions and paint sprayer options. Given the size, a 4 to 5 gallon quantity is recommended. To enhance their experience, presenting stylish color options alongside helpful tools like sprayers supports ease and inspiration.",
     "suggestions": [
-        "The room is 12 feet by 15 feet.",
-        "Its dimensions are 12 ft x 15 ft.",
-        "The size of the room is 12 by 15 feet."
+        "The room is 11 feet by 14 feet.",
+        "Its dimensions are 12 ft x 14 ft.",
+        "The size of the room is 13 by 15 feet."
     ]
 }
 
@@ -455,29 +464,572 @@ SecondIteration_v3 = {
     "answer": "Here are a few paint shades to consider for your makeover! Can you share the dimensions of your room? It’ll help me suggest the right quantity and the best tools for the job.",
     "thinking": "The customer wants to paint their room and is looking for both shade suggestions and paint sprayer options. Given the size, a 4 to 5 gallon quantity is recommended. To enhance their experience, presenting stylish color options alongside helpful tools like sprayers supports ease and inspiration.",
     "suggestions": [
-        "The room is 12 feet by 15 feet.",
-        "Its dimensions are 12 ft x 15 ft.",
-        "The size of the room is 12 by 15 feet."
+        "The room is 11 feet by 14 feet.",
+        "Its dimensions are 12 ft x 14 ft.",
+        "The size of the room is 13 by 15 feet."
     ]
 }
 
 ThirdIteration_v1 = {
-    "products": {},
-    "answer": "For a 12 by 15 foot room, you'll need about 4 to 5 gallons of paint. I recommend using a paint sprayer for a smooth, even finish. Here are some excellent sprayer options you might consider.",
+    "products": {
+        "Paint Shades":
+        [
+            {
+                "id": "PAINT-SHADE-004",
+                "name": "Coastal Whisper",
+                "type": "Paint Shade",
+                "description": "An airy, tranquil blue that evokes relaxing days by the ocean.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/CoastalWhisper.png",
+                "punchLine": "Let the calm of the coast breeze in",
+                "price": 39.99
+            },
+            {
+                "id": "PAINT-SHADE-005",
+                "name": "Effervescent Jade",
+                "type": "Paint Shade",
+                "description": "A sparkling, uplifting jade green for spaces brimming with vitality.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/EffervescentJade.png",
+                "punchLine": "Energize your room, refresh your mind",
+                "price": 42.50
+            },
+            {
+                "id": "PAINT-SHADE-006",
+                "name": "Frosted Blue",
+                "type": "Paint Shade",
+                "description": "A crisp, subtle blue perfect for creating peaceful retreats.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/FrestedBlue.png",
+                "punchLine": "Chill out in classic blue",
+                "price": 36.99
+            },
+            {
+                "id": "PAINT-SHADE-007",
+                "name": "Frosted Lemon",
+                "type": "Paint Shade",
+                "description": "A zesty, pale yellow that uplifts and brightens every corner.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/FrostedLemon.png",
+                "punchLine": "Awaken spaces with a citrus twist",
+                "price": 28.95
+            },
+            {
+                "id": "PAINT-SHADE-008",
+                "name": "Honeydew Sunrise",
+                "type": "Paint Shade",
+                "description": "A velvety, refreshing green for rejuvenated and cozy spaces.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/HoneydewSunrise.png",
+                "punchLine": "Freshen up with a gentle green glow",
+                "price": 45.00
+            },
+            {
+                "id": "PAINT-SHADE-009",
+                "name": "Lavender Whisper",
+                "type": "Paint Shade",
+                "description": "Soft lavender hues for a restful, dreamy ambiance.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/LavenderWhisper.png",
+                "punchLine": "A delicate fragrance of color",
+                "price": 33.75
+            },
+            {
+                "id": "PAINT-SHADE-010",
+                "name": "Lilac Mist",
+                "type": "Paint Shade",
+                "description": "A gentle purple mist that brings elegance and calm.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/LilacMist.png",
+                "punchLine": "Wrap your walls in a purple haze",
+                "price": 55.00
+            },
+            {
+                "id": "PAINT-SHADE-011",
+                "name": "Pale Meadow",
+                "type": "Paint Shade",
+                "description": "A soft, earthy green reminiscent of open meadows at dawn.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/PaleMeadow.png",
+                "punchLine": "Nature’s touch inside your home",
+                "price": 29.99
+            },
+            {
+                "id": "PAINT-SHADE-012",
+                "name": "Soft Creamsicle",
+                "type": "Paint Shade",
+                "description": "A creamy, orange-tinted shade for gentle warmth and cheer.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/SoftCreamsicle.png",
+                "punchLine": "Sweeten your space with a smile",
+                "price": 41.49
+            },
+            {
+                "id": "PAINT-SHADE-013",
+                "name": "Tranquil Lavender",
+                "type": "Paint Shade",
+                "description": "A muted lavender that soothes and reassures, ideal for relaxation.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/TranquilLavender.png",
+                "punchLine": "Find your peaceful moment",
+                "price": 31.25
+            },
+            {
+                "id": "PAINT-SHADE-014",
+                "name": "Whispering Blue",
+                "type": "Paint Shade",
+                "description": "Light, breezy blue that lifts spirits and refreshes the space.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/WhisperingBlue.png",
+                "punchLine": "Float away on blue skies",
+                "price": 47.30
+            },
+            {
+                "id": "PAINT-SHADE-015",
+                "name": "Whispering Blush",
+                "type": "Paint Shade",
+                "description": "A subtle, enchanting pink for warmth and understated elegance.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/WhisperingBlush.png",
+                "punchLine": "Add a blush of beauty",
+                "price": 26.00
+            } 
+        ]
+    },
+    "answer": "For a 12 by 15 foot room, you'll need about 4 to 5 gallons of paint.",
     "thinking": "The customer wants to paint their room and is looking for both shade suggestions and paint sprayer options. Given the size, a 4 to 5 gallon quantity is recommended. To enhance their experience, presenting stylish color options alongside helpful tools like sprayers supports ease and inspiration.",
-    "suggestions": []
+    "suggestions": [
+        "Thanks so much, Cora! I found the perfect shades and have added them to my cart.",
+        "Appreciate your help, Cora! I’ve selected my favorite shades and just placed them in my cart.",
+        "Thank you, Cora! I narrowed it down and the shades I wanted are now in my cart."
+    ]
 }
 
 ThirdIteration_v2 = {
-    "products": {},
-    "answer": "You’ll need roughly 4 to 5 gallons of paint for that room size. I highly suggest using a paint sprayer—it makes the job quicker and gives great results! Let me show you a few top sprayer choices.",
+    "products": {
+        "Paint Shades":
+        [
+            {
+                "id": "PAINT-SHADE-004",
+                "name": "Coastal Whisper",
+                "type": "Paint Shade",
+                "description": "An airy, tranquil blue that evokes relaxing days by the ocean.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/CoastalWhisper.png",
+                "punchLine": "Let the calm of the coast breeze in",
+                "price": 39.99
+            },
+            {
+                "id": "PAINT-SHADE-005",
+                "name": "Effervescent Jade",
+                "type": "Paint Shade",
+                "description": "A sparkling, uplifting jade green for spaces brimming with vitality.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/EffervescentJade.png",
+                "punchLine": "Energize your room, refresh your mind",
+                "price": 42.50
+            },
+            {
+                "id": "PAINT-SHADE-006",
+                "name": "Frosted Blue",
+                "type": "Paint Shade",
+                "description": "A crisp, subtle blue perfect for creating peaceful retreats.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/FrestedBlue.png",
+                "punchLine": "Chill out in classic blue",
+                "price": 36.99
+            },
+            {
+                "id": "PAINT-SHADE-007",
+                "name": "Frosted Lemon",
+                "type": "Paint Shade",
+                "description": "A zesty, pale yellow that uplifts and brightens every corner.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/FrostedLemon.png",
+                "punchLine": "Awaken spaces with a citrus twist",
+                "price": 28.95
+            },
+            {
+                "id": "PAINT-SHADE-008",
+                "name": "Honeydew Sunrise",
+                "type": "Paint Shade",
+                "description": "A velvety, refreshing green for rejuvenated and cozy spaces.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/HoneydewSunrise.png",
+                "punchLine": "Freshen up with a gentle green glow",
+                "price": 45.00
+            },
+            {
+                "id": "PAINT-SHADE-009",
+                "name": "Lavender Whisper",
+                "type": "Paint Shade",
+                "description": "Soft lavender hues for a restful, dreamy ambiance.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/LavenderWhisper.png",
+                "punchLine": "A delicate fragrance of color",
+                "price": 33.75
+            },
+            {
+                "id": "PAINT-SHADE-010",
+                "name": "Lilac Mist",
+                "type": "Paint Shade",
+                "description": "A gentle purple mist that brings elegance and calm.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/LilacMist.png",
+                "punchLine": "Wrap your walls in a purple haze",
+                "price": 55.00
+            },
+            {
+                "id": "PAINT-SHADE-011",
+                "name": "Pale Meadow",
+                "type": "Paint Shade",
+                "description": "A soft, earthy green reminiscent of open meadows at dawn.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/PaleMeadow.png",
+                "punchLine": "Nature’s touch inside your home",
+                "price": 29.99
+            },
+            {
+                "id": "PAINT-SHADE-012",
+                "name": "Soft Creamsicle",
+                "type": "Paint Shade",
+                "description": "A creamy, orange-tinted shade for gentle warmth and cheer.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/SoftCreamsicle.png",
+                "punchLine": "Sweeten your space with a smile",
+                "price": 41.49
+            },
+            {
+                "id": "PAINT-SHADE-013",
+                "name": "Tranquil Lavender",
+                "type": "Paint Shade",
+                "description": "A muted lavender that soothes and reassures, ideal for relaxation.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/TranquilLavender.png",
+                "punchLine": "Find your peaceful moment",
+                "price": 31.25
+            },
+            {
+                "id": "PAINT-SHADE-014",
+                "name": "Whispering Blue",
+                "type": "Paint Shade",
+                "description": "Light, breezy blue that lifts spirits and refreshes the space.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/WhisperingBlue.png",
+                "punchLine": "Float away on blue skies",
+                "price": 47.30
+            },
+            {
+                "id": "PAINT-SHADE-015",
+                "name": "Whispering Blush",
+                "type": "Paint Shade",
+                "description": "A subtle, enchanting pink for warmth and understated elegance.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/WhisperingBlush.png",
+                "punchLine": "Add a blush of beauty",
+                "price": 26.00
+            } 
+        ]
+    },
+    "answer": "You’ll need roughly 4 to 5 gallons of paint for that room size.",
+    "thinking": "The customer wants to paint their room and is looking for both shade suggestions and paint sprayer options. Given the size, a 4 to 5 gallon quantity is recommended. To enhance their experience, presenting stylish color options alongside helpful tools like sprayers supports ease and inspiration.",
+    "suggestions": [
+        "Thanks so much, Cora! I found the perfect shades and have added them to my cart.",
+        "Appreciate your help, Cora! I’ve selected my favorite shades and just placed them in my cart.",
+        "Thank you, Cora! I narrowed it down and the shades I wanted are now in my cart."
+    ]
+}
+
+ThirdIteration_v3 = {
+    "products": {
+        "Paint Shades":
+        [
+            {
+                "id": "PAINT-SHADE-004",
+                "name": "Coastal Whisper",
+                "type": "Paint Shade",
+                "description": "An airy, tranquil blue that evokes relaxing days by the ocean.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/CoastalWhisper.png",
+                "punchLine": "Let the calm of the coast breeze in",
+                "price": 39.99
+            },
+            {
+                "id": "PAINT-SHADE-005",
+                "name": "Effervescent Jade",
+                "type": "Paint Shade",
+                "description": "A sparkling, uplifting jade green for spaces brimming with vitality.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/EffervescentJade.png",
+                "punchLine": "Energize your room, refresh your mind",
+                "price": 42.50
+            },
+            {
+                "id": "PAINT-SHADE-006",
+                "name": "Frosted Blue",
+                "type": "Paint Shade",
+                "description": "A crisp, subtle blue perfect for creating peaceful retreats.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/FrestedBlue.png",
+                "punchLine": "Chill out in classic blue",
+                "price": 36.99
+            },
+            {
+                "id": "PAINT-SHADE-007",
+                "name": "Frosted Lemon",
+                "type": "Paint Shade",
+                "description": "A zesty, pale yellow that uplifts and brightens every corner.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/FrostedLemon.png",
+                "punchLine": "Awaken spaces with a citrus twist",
+                "price": 28.95
+            },
+            {
+                "id": "PAINT-SHADE-008",
+                "name": "Honeydew Sunrise",
+                "type": "Paint Shade",
+                "description": "A velvety, refreshing green for rejuvenated and cozy spaces.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/HoneydewSunrise.png",
+                "punchLine": "Freshen up with a gentle green glow",
+                "price": 45.00
+            },
+            {
+                "id": "PAINT-SHADE-009",
+                "name": "Lavender Whisper",
+                "type": "Paint Shade",
+                "description": "Soft lavender hues for a restful, dreamy ambiance.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/LavenderWhisper.png",
+                "punchLine": "A delicate fragrance of color",
+                "price": 33.75
+            },
+            {
+                "id": "PAINT-SHADE-010",
+                "name": "Lilac Mist",
+                "type": "Paint Shade",
+                "description": "A gentle purple mist that brings elegance and calm.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/LilacMist.png",
+                "punchLine": "Wrap your walls in a purple haze",
+                "price": 55.00
+            },
+            {
+                "id": "PAINT-SHADE-011",
+                "name": "Pale Meadow",
+                "type": "Paint Shade",
+                "description": "A soft, earthy green reminiscent of open meadows at dawn.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/PaleMeadow.png",
+                "punchLine": "Nature’s touch inside your home",
+                "price": 29.99
+            },
+            {
+                "id": "PAINT-SHADE-012",
+                "name": "Soft Creamsicle",
+                "type": "Paint Shade",
+                "description": "A creamy, orange-tinted shade for gentle warmth and cheer.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/SoftCreamsicle.png",
+                "punchLine": "Sweeten your space with a smile",
+                "price": 41.49
+            },
+            {
+                "id": "PAINT-SHADE-013",
+                "name": "Tranquil Lavender",
+                "type": "Paint Shade",
+                "description": "A muted lavender that soothes and reassures, ideal for relaxation.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/TranquilLavender.png",
+                "punchLine": "Find your peaceful moment",
+                "price": 31.25
+            },
+            {
+                "id": "PAINT-SHADE-014",
+                "name": "Whispering Blue",
+                "type": "Paint Shade",
+                "description": "Light, breezy blue that lifts spirits and refreshes the space.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/WhisperingBlue.png",
+                "punchLine": "Float away on blue skies",
+                "price": 47.30
+            },
+            {
+                "id": "PAINT-SHADE-015",
+                "name": "Whispering Blush",
+                "type": "Paint Shade",
+                "description": "A subtle, enchanting pink for warmth and understated elegance.",
+                "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/WhisperingBlush.png",
+                "punchLine": "Add a blush of beauty",
+                "price": 26.00
+            } 
+        ]
+    },
+    "answer": "With a room of that dimension, I’d recommend 4 to 5 gallons of paint.",
+    "thinking": "The customer wants to paint their room and is looking for both shade suggestions and paint sprayer options. Given the size, a 4 to 5 gallon quantity is recommended. To enhance their experience, presenting stylish color options alongside helpful tools like sprayers supports ease and inspiration.",
+    "suggestions": [
+        "Thanks so much, Cora! I found the perfect shades and have added them to my cart.",
+        "Appreciate your help, Cora! I’ve selected my favorite shades and just placed them in my cart.",
+        "Thank you, Cora! I narrowed it down and the shades I wanted are now in my cart."
+    ]
+}
+
+FourthIteration_v1 = {
+    "products": 
+    {
+        "Paint Sprayers": [
+            {
+            "id": "PAINT-SPRAYER-001",
+            "name": "Cordless Airless Pro",
+            "type": "Paint Sprayer",
+            "description": "Go cordless and conquer any project with this ultra-portable airless paint sprayer. Delivers smooth, even coverage on walls, decks, and fences—anywhere freedom is needed.",
+            "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/CordlessAirlessPaintSprayer.png",
+            "punchLine": "Spray without limits, anywhere you go!",
+            "price": 199.99
+            },
+            {
+            "id": "PAINT-SPRAYER-002",
+            "name": "Cordless Compact Painter",
+            "type": "Paint Sprayer",
+            "description": "Perfect for precision DIYers—this compact, cordless paint sprayer is ideal for touch-ups, furniture, and tight corners. Lightweight, portable, and powerful.",
+            "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/CordlessPaintSprayerCompact.png",
+            "punchLine": "Precision in the palm of your hand",
+            "price": 129.50
+            },
+            {
+            "id": "PAINT-SPRAYER-003",
+            "name": "Electric Sprayer 350",
+            "type": "Paint Sprayer",
+            "description": "A dependable electric paint sprayer offering 350W of steady power for smooth, consistent finishes. Ideal for home interiors, cabinetry, and more.",
+            "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/ElectricPaintSprayer350.png",
+            "punchLine": "Power up your paint game!",
+            "price": 89.99
+            },
+            {
+            "id": "PAINT-SPRAYER-004",
+            "name": "HVLP SuperFinish",
+            "type": "Paint Sprayer",
+            "description": "A high-volume, low-pressure paint sprayer for a professional, glass-smooth finish on cabinets, crafts, and trim. Super controllable with minimal overspray.",
+            "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/HVLPPaintSprayerSuperFinish.png",
+            "punchLine": "Smooth as silk, pro-grade results",
+            "price": 149.75
+            },
+            {
+            "id": "PAINT-SPRAYER-005",
+            "name": "Handheld Airless 360",
+            "type": "Paint Sprayer",
+            "description": "Advanced handheld airless sprayer with 360-degree usability for walls, ceilings, furniture, and more. Perfect for quick projects and detailed work.",
+            "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/HandheldAirlessSprayer360.png",
+            "punchLine": "Complete flexibility, flawless finish",
+            "price": 169.25
+            },
+            {
+            "id": "PAINT-SPRAYER-006",
+            "name": "Handheld HVLP Pro",
+            "type": "Paint Sprayer",
+            "description": "A user-friendly, handheld HVLP paint sprayer designed for crafts, small to mid-sized furniture, and décor. Get precise results with little mess.",
+            "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/HandheldHVLPPaintSprayer.png",
+            "punchLine": "Create, decorate, and elevate",
+            "price": 69.99
+            }
+        ]
+        },
+    "answer": "I definitely recommend using a paint sprayer—it speeds up the process and delivers a smooth, professional finish. Let me share a few of the best sprayer options with you.",
     "thinking": "The customer wants to paint their room and is looking for both shade suggestions and paint sprayer options. Given the size, a 4 to 5 gallon quantity is recommended. To enhance their experience, presenting stylish color options alongside helpful tools like sprayers supports ease and inspiration.",
     "suggestions": []
 }
 
-ThirdIteration_v3 = {
-    "products": {},
-    "answer": "With a room of that dimension, I’d recommend 4 to 5 gallons of paint. A paint sprayer will really help get a professional look. Here are some great sprayer options I can recommend.",
+FourthIteration_v2 = {
+    "products": 
+    {
+        "Paint Sprayers": [
+            {
+            "id": "PAINT-SPRAYER-001",
+            "name": "Cordless Airless Pro",
+            "type": "Paint Sprayer",
+            "description": "Go cordless and conquer any project with this ultra-portable airless paint sprayer. Delivers smooth, even coverage on walls, decks, and fences—anywhere freedom is needed.",
+            "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/CordlessAirlessPaintSprayer.png",
+            "punchLine": "Spray without limits, anywhere you go!",
+            "price": 199.99
+            },
+            {
+            "id": "PAINT-SPRAYER-002",
+            "name": "Cordless Compact Painter",
+            "type": "Paint Sprayer",
+            "description": "Perfect for precision DIYers—this compact, cordless paint sprayer is ideal for touch-ups, furniture, and tight corners. Lightweight, portable, and powerful.",
+            "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/CordlessPaintSprayerCompact.png",
+            "punchLine": "Precision in the palm of your hand",
+            "price": 129.50
+            },
+            {
+            "id": "PAINT-SPRAYER-003",
+            "name": "Electric Sprayer 350",
+            "type": "Paint Sprayer",
+            "description": "A dependable electric paint sprayer offering 350W of steady power for smooth, consistent finishes. Ideal for home interiors, cabinetry, and more.",
+            "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/ElectricPaintSprayer350.png",
+            "punchLine": "Power up your paint game!",
+            "price": 89.99
+            },
+            {
+            "id": "PAINT-SPRAYER-004",
+            "name": "HVLP SuperFinish",
+            "type": "Paint Sprayer",
+            "description": "A high-volume, low-pressure paint sprayer for a professional, glass-smooth finish on cabinets, crafts, and trim. Super controllable with minimal overspray.",
+            "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/HVLPPaintSprayerSuperFinish.png",
+            "punchLine": "Smooth as silk, pro-grade results",
+            "price": 149.75
+            },
+            {
+            "id": "PAINT-SPRAYER-005",
+            "name": "Handheld Airless 360",
+            "type": "Paint Sprayer",
+            "description": "Advanced handheld airless sprayer with 360-degree usability for walls, ceilings, furniture, and more. Perfect for quick projects and detailed work.",
+            "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/HandheldAirlessSprayer360.png",
+            "punchLine": "Complete flexibility, flawless finish",
+            "price": 169.25
+            },
+            {
+            "id": "PAINT-SPRAYER-006",
+            "name": "Handheld HVLP Pro",
+            "type": "Paint Sprayer",
+            "description": "A user-friendly, handheld HVLP paint sprayer designed for crafts, small to mid-sized furniture, and décor. Get precise results with little mess.",
+            "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/HandheldHVLPPaintSprayer.png",
+            "punchLine": "Create, decorate, and elevate",
+            "price": 69.99
+            }
+        ]
+        },
+    "answer": "For quicker, more even coverage, I highly suggest going with a paint sprayer. The results are fantastic! Here are some top sprayers I’d recommend.",
+    "thinking": "The customer wants to paint their room and is looking for both shade suggestions and paint sprayer options. Given the size, a 4 to 5 gallon quantity is recommended. To enhance their experience, presenting stylish color options alongside helpful tools like sprayers supports ease and inspiration.",
+    "suggestions": []
+}
+
+FourthIteration_v3 = {
+    "products": 
+    {
+        "Paint Sprayers": [
+            {
+            "id": "PAINT-SPRAYER-001",
+            "name": "Cordless Airless Pro",
+            "type": "Paint Sprayer",
+            "description": "Go cordless and conquer any project with this ultra-portable airless paint sprayer. Delivers smooth, even coverage on walls, decks, and fences—anywhere freedom is needed.",
+            "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/CordlessAirlessPaintSprayer.png",
+            "punchLine": "Spray without limits, anywhere you go!",
+            "price": 199.99
+            },
+            {
+            "id": "PAINT-SPRAYER-002",
+            "name": "Cordless Compact Painter",
+            "type": "Paint Sprayer",
+            "description": "Perfect for precision DIYers—this compact, cordless paint sprayer is ideal for touch-ups, furniture, and tight corners. Lightweight, portable, and powerful.",
+            "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/CordlessPaintSprayerCompact.png",
+            "punchLine": "Precision in the palm of your hand",
+            "price": 129.50
+            },
+            {
+            "id": "PAINT-SPRAYER-003",
+            "name": "Electric Sprayer 350",
+            "type": "Paint Sprayer",
+            "description": "A dependable electric paint sprayer offering 350W of steady power for smooth, consistent finishes. Ideal for home interiors, cabinetry, and more.",
+            "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/ElectricPaintSprayer350.png",
+            "punchLine": "Power up your paint game!",
+            "price": 89.99
+            },
+            {
+            "id": "PAINT-SPRAYER-004",
+            "name": "HVLP SuperFinish",
+            "type": "Paint Sprayer",
+            "description": "A high-volume, low-pressure paint sprayer for a professional, glass-smooth finish on cabinets, crafts, and trim. Super controllable with minimal overspray.",
+            "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/HVLPPaintSprayerSuperFinish.png",
+            "punchLine": "Smooth as silk, pro-grade results",
+            "price": 149.75
+            },
+            {
+            "id": "PAINT-SPRAYER-005",
+            "name": "Handheld Airless 360",
+            "type": "Paint Sprayer",
+            "description": "Advanced handheld airless sprayer with 360-degree usability for walls, ceilings, furniture, and more. Perfect for quick projects and detailed work.",
+            "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/HandheldAirlessSprayer360.png",
+            "punchLine": "Complete flexibility, flawless finish",
+            "price": 169.25
+            },
+            {
+            "id": "PAINT-SPRAYER-006",
+            "name": "Handheld HVLP Pro",
+            "type": "Paint Sprayer",
+            "description": "A user-friendly, handheld HVLP paint sprayer designed for crafts, small to mid-sized furniture, and décor. Get precise results with little mess.",
+            "imageURL": "https://staidemodev.blob.core.windows.net/hero-demos-hardcoded-chat-images/HandheldHVLPPaintSprayer.png",
+            "punchLine": "Create, decorate, and elevate",
+            "price": 69.99
+            }
+        ]
+        },
+    "answer": "Using a paint sprayer is a game-changer—it makes the job faster and ensures excellent results. Let me introduce you to some of the best sprayer choices available.",
     "thinking": "The customer wants to paint their room and is looking for both shade suggestions and paint sprayer options. Given the size, a 4 to 5 gallon quantity is recommended. To enhance their experience, presenting stylish color options alongside helpful tools like sprayers supports ease and inspiration.",
     "suggestions": []
 }

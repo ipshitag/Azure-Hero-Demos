@@ -4,7 +4,7 @@ import time
 import json
 import random
 from src.hardcodedReplies import OnlyOneIterationAnswer
-from src.hardcodedReplies import FirstIteration_v1, FirstIteration_v2, FirstIteration_v3, SecondIteration_v1, SecondIteration_v2, SecondIteration_v3, ThirdIteration_v1, ThirdIteration_v2, ThirdIteration_v3, greetings
+from src.hardcodedReplies import FirstIteration_v1, FirstIteration_v2, FirstIteration_v3, SecondIteration_v1, SecondIteration_v2, SecondIteration_v3, ThirdIteration_v1, ThirdIteration_v2, ThirdIteration_v3, FourthIteration_v1, FourthIteration_v2, FourthIteration_v3,greetings
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 
 @app.route(route="hardcode_chat_function_1a")
@@ -28,9 +28,11 @@ def hardcode_chat_function_1a(req: func.HttpRequest) -> func.HttpResponse:
             pass
         else:
             image = req_body.get('image')
+    if image is None:
+        image = False
 
     time.sleep(3)
-    if query == "How many gallons of paint do I need to buy to paint my living room? It's about 12 ft by 15 ft." or query == "How much paint will I need to cover a 15x15 ft living room room?" or query == "Can you help me figure out the paint needed for a 15 x15 living space?":
+    if query == "How many gallons of paint do I need to buy to paint my living room? Its about 12 ft by 15 ft." or query == "How much paint will I need to cover a 15x15 ft living room room?" or query == "Can you help me figure out the paint needed for a 15 x15 living space?":
         Answer = OnlyOneIterationAnswer
         return func.HttpResponse(
             json.dumps(Answer),
@@ -54,7 +56,7 @@ def hardcode_chat_function_1a(req: func.HttpRequest) -> func.HttpResponse:
             status_code=200
         )
     
-    if query == "The room is 12 feet by 15 feet." or query == "Its dimensions are 12 ft x 15 ft." or query == "The size of the room is 12 by 15 feet.":
+    if query == "The room is 11 feet by 14 feet." or query == "Its dimensions are 12 ft x 14 ft." or query == "The size of the room is 13 by 15 feet.":
         Answer = random.choice([ThirdIteration_v1, ThirdIteration_v2, ThirdIteration_v3])
         return func.HttpResponse(
             json.dumps(Answer),
@@ -65,6 +67,14 @@ def hardcode_chat_function_1a(req: func.HttpRequest) -> func.HttpResponse:
     if (
     query == "Hi" or query == "Hello" or query == "Hey" or query == "Hi there" or query == "Hello there" or query == "Hey there" or query == "Hiya" or query == "Howdy" or query == "Greetings" or query == "Salutations" or query == "What’s up?" or query == "How’s it going?" or query == "What’s new?" or query == "How are you?" or query == "How have you been?" or query == "What’s happening?" or query == "What’s good?" or query == "What’s cooking?" or query == "What’s the word?"):
         Answer = greetings
+        return func.HttpResponse(
+            json.dumps(Answer),
+            mimetype="application/json",
+            status_code=200
+        )
+    
+    if query == "Thanks so much, Cora! I found the perfect shades and have added them to my cart." or query == "Appreciate your help, Cora! I’ve selected my favorite shades and just placed them in my cart." or query == "Thank you, Cora! I narrowed it down and the shades I wanted are now in my cart.":
+        Answer = random.choice([FourthIteration_v1, FourthIteration_v2, FourthIteration_v3])
         return func.HttpResponse(
             json.dumps(Answer),
             mimetype="application/json",
