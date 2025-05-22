@@ -48,6 +48,14 @@ def hardcode_chat_function_1a(req: func.HttpRequest) -> func.HttpResponse:
             status_code=200
         )
     
+    if query == "Hi. I want to paint my living room, but I'm not sure what shade I want or how much paint I'll need." or query == "Hello, I need some help with paint for my living room. I haven’t picked out a color or figured out how many gallons I'll need yet." or query == "I’d like to get some paint for my living room. Can you send me some color options and tell me how much paint I'll need?":
+        Answer = random.choice([FirstIteration_v1, FirstIteration_v2, FirstIteration_v3])
+        return func.HttpResponse(
+            json.dumps(Answer),
+            mimetype="application/json",
+            status_code=200
+        )
+    
     if query == "I dont have a photo, but its a small living room with a lot of light." or query == "I cannot share a photo, but I can describe the room, its a studio apartment with a lot of light." or image == True:
         Answer = random.choice([SecondIteration_v1, SecondIteration_v2, SecondIteration_v3])
         return func.HttpResponse(

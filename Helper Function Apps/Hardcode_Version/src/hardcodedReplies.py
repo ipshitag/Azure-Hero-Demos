@@ -584,7 +584,7 @@ ThirdIteration_v1 = {
             } 
         ]
     },
-    "answer": "For a 12 by 15 foot room, you'll need about 4 to 5 gallons of paint.",
+    "answer": "Given those measurements, plan on using 4 to 5 gallons of paint.",
     "thinking": "The customer wants to paint their room and is looking for both shade suggestions and paint sprayer options. Given the size, a 4 to 5 gallon quantity is recommended. To enhance their experience, presenting stylish color options alongside helpful tools like sprayers supports ease and inspiration.",
     "suggestions": [
         "Thanks so much, Cora! I found the perfect shades and have added them to my cart.",
@@ -872,7 +872,7 @@ FourthIteration_v1 = {
             }
         ]
         },
-    "answer": "Great pick! For a DIY enthusiast like you, a paint sprayer would be an excellent addition—it speeds up the job and delivers a smooth, professional finish.",
+    "answer": "Great pick! A paint sprayer would be an excellent addition—it speeds up the job and delivers a smooth, professional finish.",
     "thinking": "The customer wants to paint their room and is looking for both shade suggestions and paint sprayer options. Given the size, a 4 to 5 gallon quantity is recommended. To enhance their experience, presenting stylish color options alongside helpful tools like sprayers supports ease and inspiration.",
     "suggestions": []
 }
@@ -948,7 +948,7 @@ FourthIteration_v3 = {
             }
         ]
         },
-    "answer": "Nice choice! If you're into DIY projects, I’d recommend adding a paint sprayer. It helps you complete tasks faster and ensures a high-quality result every time.",
+    "answer": "Nice choice! I’d recommend adding a paint sprayer. It helps you complete tasks faster and ensures a high-quality result every time.",
     "thinking": "The customer wants to paint their room and is looking for both shade suggestions and paint sprayer options. Given the size, a 4 to 5 gallon quantity is recommended. To enhance their experience, presenting stylish color options alongside helpful tools like sprayers supports ease and inspiration.",
     "suggestions": []
 }
@@ -990,6 +990,7 @@ InstoreFirstIteration_v1 = {
     "thinking": "The customer wants to paint their room and is looking for both shade suggestions and paint sprayer options. Given the size, a 4 to 5 gallon quantity is recommended. To enhance their experience, presenting stylish color options alongside helpful tools like sprayers supports ease and inspiration.",
     "suggestions": []
 }
+
 InstoreFirstIteration_v2 = {
    "products": 
     {
@@ -1027,6 +1028,7 @@ InstoreFirstIteration_v2 = {
     "thinking": "The customer wants to paint their room and is looking for both shade suggestions and paint sprayer options. Given the size, a 4 to 5 gallon quantity is recommended. To enhance their experience, presenting stylish color options alongside helpful tools like sprayers supports ease and inspiration.",
     "suggestions": []
 }
+
 InstoreFirstIteration_v3 = {
    "products": 
     {
