@@ -4,7 +4,7 @@ import time
 import json
 import random
 from src.hardcodedReplies import OnlyOneIterationAnswer
-from src.hardcodedReplies import FirstIteration_v1, FirstIteration_v2, FirstIteration_v3, SecondIteration_v1, SecondIteration_v2, SecondIteration_v3, ThirdIteration_v1, ThirdIteration_v2, ThirdIteration_v3, FourthIteration_v1, FourthIteration_v2, FourthIteration_v3,greetings
+from src.hardcodedReplies import FirstIteration_v1, FirstIteration_v2, FirstIteration_v3, SecondIteration_v1, SecondIteration_v2, SecondIteration_v3, ThirdIteration_v1, ThirdIteration_v2, ThirdIteration_v3, FourthIteration_v1, FourthIteration_v2, FourthIteration_v3,greetings,InstoreFirstIteration_v1,InstoreFirstIteration_v2,InstoreFirstIteration_v3
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 
 @app.route(route="hardcode_chat_function_1a")
@@ -75,6 +75,15 @@ def hardcode_chat_function_1a(req: func.HttpRequest) -> func.HttpResponse:
     
     if query == "Thanks so much, Cora! I found the perfect shades and have added them to my cart." or query == "Appreciate your help, Cora! I’ve selected my favorite shades and just placed them in my cart." or query == "Thank you, Cora! I narrowed it down and the shades I wanted are now in my cart.":
         Answer = random.choice([FourthIteration_v1, FourthIteration_v2, FourthIteration_v3])
+        return func.HttpResponse(
+            json.dumps(Answer),
+            mimetype="application/json",
+            status_code=200
+        )
+    
+    
+    if query == "Can you show me some other paint sprayers?" or query == "Give me alternative paint sprayers" or query == "Do you have different models of paint sprayers?":
+        Answer = random.choice([InstoreFirstIteration_v1,InstoreFirstIteration_v2,InstoreFirstIteration_v3])
         return func.HttpResponse(
             json.dumps(Answer),
             mimetype="application/json",
